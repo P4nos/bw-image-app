@@ -1,0 +1,14 @@
+html {
+  font-family: sans-serif;
+}
+
+div label, button{
+  background-color: #7F9CCB;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px ridge black;
+  font-size: 0.8rem;
+  height: auto;
+}
