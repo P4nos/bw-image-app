@@ -12,11 +12,25 @@
   "license": "ISC",
   "devDependencies": {
     "body-parser": "^1.15.2",
+    "bunyan": "^1.8.12",
     "connect-busboy": "^0.0.2",
     "express": "^4.14.0",
+    "hjs": "0.0.6",
     "nodemon": "^1.12.1",
     "python-shell": "^0.4.0",
+    "redis": "^2.8.0",
+    "serve-favicon": "^2.4.5"
+  },
+  "dependencies": {
+    "snake-case": "^2.1.0",
+    "body-parser": "^1.15.2",
+    "bunyan": "^1.8.12",
+    "connect-busboy": "^0.0.2",
+    "express": "^4.14.0",
     "hjs": "0.0.6",
+    "nodemon": "^1.12.1",
+    "python-shell": "^0.4.0",
+    "redis": "^2.8.0",
     "serve-favicon": "^2.4.5"
   }
 }

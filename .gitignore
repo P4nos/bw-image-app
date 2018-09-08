@@ -3,3 +3,9 @@ node_modules/
 
 # local files
 uploads/
+public/output
+
+# image types
+*.png
+*jpg
+*jpeg

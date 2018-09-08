@@ -2,13 +2,32 @@ html {
   font-family: sans-serif;
 }
 
-div label, button{
-  background-color: #7F9CCB;
-  padding: 5px 10px;
+#image_placeholder {
+}
+
+#styles_list {
+	padding-top: 10px;
+}
+
+button, input, select{
+  font-family : inherit;
+  font-size   : 100%;
+  padding-top: 5px;
   margin-top: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  border: 1px ridge black;
-  font-size: 0.8rem;
-  height: auto;
+}
+.form {
+	padding: 10px;
+	margin: 10px 20px 20px 20px;
+}
+body, h1{
+	padding: 10px 10px 10px 10px;
+	margin: 20px;
+}
+p {
+	padding: 10px;
+	margin: 20px;
+}
+#action {
+	margin: 20px 20px 10px 20px;
+	padding: 10px
 }

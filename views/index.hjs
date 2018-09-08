@@ -1,21 +1,84 @@
+<!doctype html>
 <html>
-  <title> Bibweb </title>
-  <body>
-      <p> The back in black website </p>
-      {{title}}
-      {{#image_ready}}
-		<div>      
-		<img src={{image_filename}} width="300" height="200"></img>
+<title> ARTweb </title>
+<head>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>The most artistic website of all</h1>
+	<p>Style your images using famous paintings</p>
+	<p id="action">{{title}}</p>
+	{{#image_ready}}
+	<form class="form" action="/process" method="post">
+		<div id="image_placeholder">
+			<img src={{image_filename}} width="300" height="200"></img>
+			{{#loader}}
+				<div class="loader"></div>
+			{{/loader}}
 		</div>
-		<form action="/process" method="post">
+		<div id="styles_list">
+			<div>
+				<label for="choice_1">
+					La muse
+					<input type="radio" id="choice_1" name="style" value="/eccv16/la_muse.t7" checked="true">
+				</label>
+			</div>
+			<div>
+				<label for="choice_2">
+					Composition
+					<input type="radio" id="choice_2" name="style" value="/eccv16/composition_vii.t7">
+				</label>
+			</div>
+			<div>
+				<label for="choice_3">
+					Starry night
+					<input type="radio" id="choice_3" name="style" value="/eccv16/starry_night.t7">
+				</label>
+			<div>
+				<label for="choice_4">
+					The wave
+					<input type="radio" id="choice_4" name="style" value="/eccv16/the_wave.t7">
+				</label>
+			</div>
+			<div>
+				<label for="choice_5">
+					Candy
+					<input type="radio" id="choice_5" name="style" value="/instance_norm/candy.t7">
+				</label>
+			</div>
+			<div>
+				<label for="choice_6">
+					Feather
+					<input type="radio" id="choice_6" name="style" value="/instance_norm/mosaic.t7">
+				</label>
+			</div>
+			<div>
+				<label for="choice_7">
+					Mosaic
+					<input type="radio" id="choice_7" name="style" value="/instance_norm/feather.t7">
+				</label>
+			</div>
+			<div>
+				<label for="choice_8">
+					The scream
+					<input type="radio" id="choice_8" name="style" value="/instance_norm/the_scream.t7">
+				</label>
+			</div>
+			<div>
+				<label for="choice_9">
+					Udnie
+					<input type="radio" id="choice_9" name="style" value="/instance_norm/udnie.t7">
+				</label>
+			</div>
+		</div>
 		<input type="submit" value="process">
-      {{/image_ready}}
-      {{#select_file}}
-	      <div>
-	      <form action="/upload" method="post" enctype="multipart/form-data">
+	</form>
+	{{/image_ready}}
+	{{#select_file}}
+	<form class="form" action="/upload" method="post" enctype="multipart/form-data">
 		<input type="file" name="image">
 		<input type="submit" value="upload">
-	      </div>
-      {{/select_file}}
-  </body>
+	</form>
+	{{/select_file}}
+</body>
 </html>
