@@ -1,0 +1,3 @@
+[submodule "fast-neural-style"]
+	path = fast-neural-style
+	url = https://github.com/jcjohnson/fast-neural-style
